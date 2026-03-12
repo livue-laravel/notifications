@@ -1,0 +1,24 @@
+{
+    "name": "primix/notifications",
+    "description": "Notification system for Primix admin panel framework",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "primix/support": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "Primix\\Notifications\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Primix\\Notifications\\PrimixNotificationsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
